@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Lko-ed-lop" customClass="TaskDetailNavView">
+            <rect key="frame" x="0.0" y="0.0" width="189" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gL-ek-bT3">
+                    <rect key="frame" x="0.0" y="0.0" width="94.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="任务详情">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="任务详情" backgroundImage="white">
+                        <color key="titleColor" red="0.94657272100000001" green="0.38040488960000002" blue="0.33655798440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="TaskDetailNav:" destination="Lko-ed-lop" eventType="touchUpInside" id="hbv-gi-ZHO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSH-Hx-WTd">
+                    <rect key="frame" x="94.5" y="0.0" width="94.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="工作上报">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="工作上报" backgroundImage="white">
+                        <color key="titleColor" red="0.94657272100000001" green="0.38040488960000002" blue="0.33655798440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="TaskDetailNav:" destination="Lko-ed-lop" eventType="touchUpInside" id="uO2-pf-gEm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qSH-Hx-WTd" firstAttribute="leading" secondItem="8gL-ek-bT3" secondAttribute="trailing" id="3mT-Ut-QH3"/>
+                <constraint firstItem="8gL-ek-bT3" firstAttribute="top" secondItem="Lko-ed-lop" secondAttribute="top" id="44j-YZ-Khj"/>
+                <constraint firstItem="qSH-Hx-WTd" firstAttribute="width" secondItem="8gL-ek-bT3" secondAttribute="width" id="4iY-hx-Z0e"/>
+                <constraint firstItem="8gL-ek-bT3" firstAttribute="leading" secondItem="Lko-ed-lop" secondAttribute="leading" id="OTn-Wf-aOO"/>
+                <constraint firstAttribute="bottom" secondItem="8gL-ek-bT3" secondAttribute="bottom" id="Pix-kC-eeb"/>
+                <constraint firstAttribute="bottom" secondItem="qSH-Hx-WTd" secondAttribute="bottom" id="SfT-Ro-gJJ"/>
+                <constraint firstItem="qSH-Hx-WTd" firstAttribute="top" secondItem="Lko-ed-lop" secondAttribute="top" id="TDu-Gl-3rU"/>
+                <constraint firstItem="qSH-Hx-WTd" firstAttribute="height" secondItem="8gL-ek-bT3" secondAttribute="height" id="fCy-kR-Iio"/>
+                <constraint firstAttribute="trailing" secondItem="qSH-Hx-WTd" secondAttribute="trailing" id="tBd-3p-mDm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="oneBtn" destination="8gL-ek-bT3" id="Kdf-kI-aLB"/>
+                <outlet property="twoBtn" destination="qSH-Hx-WTd" id="IqJ-l3-mr5"/>
+            </connections>
+            <point key="canvasLocation" x="-380.5" y="-51"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="white" width="94" height="44"/>
+    </resources>
+</document>

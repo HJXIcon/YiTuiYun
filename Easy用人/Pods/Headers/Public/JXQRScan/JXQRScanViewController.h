@@ -1,0 +1,1 @@
+../../../JXQRScan/JXQRScan/JXQRScan/JXQRScanViewController.h

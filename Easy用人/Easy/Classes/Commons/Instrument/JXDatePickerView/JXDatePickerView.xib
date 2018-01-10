@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zv5-hj-7Hy" customClass="JXDatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLW-eY-ABN">
+                    <rect key="frame" x="10" y="397" width="355" height="270"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddY-PV-4uH">
+                            <rect key="frame" x="0.0" y="226" width="355" height="44"/>
+                            <color key="backgroundColor" red="0.04085352272" green="0.37480330470000001" blue="0.99835759400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="LGg-ZM-saU"/>
+                            </constraints>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doneAction:" destination="zv5-hj-7Hy" eventType="touchUpInside" id="Rrb-vs-Ivg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsS-fd-5db">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="216"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="Cz7-eh-bLN"/>
+                                <constraint firstAttribute="width" constant="300" id="OP8-AM-uCG"/>
+                                <constraint firstAttribute="height" constant="216" id="uCW-Jh-vKp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                            <color key="textColor" red="0.91225260500000005" green="0.93091040849999995" blue="0.95064496990000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="OP8-AM-uCG"/>
+                                    <exclude reference="Cz7-eh-bLN"/>
+                                </mask>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="0.98478763199999997" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ddY-PV-4uH" firstAttribute="top" secondItem="bsS-fd-5db" secondAttribute="bottom" id="3U3-3U-cXR"/>
+                        <constraint firstAttribute="trailing" secondItem="ddY-PV-4uH" secondAttribute="trailing" id="Hd1-qA-0Vk"/>
+                        <constraint firstAttribute="height" constant="340" id="KCN-8J-k8G"/>
+                        <constraint firstAttribute="trailing" secondItem="bsS-fd-5db" secondAttribute="trailing" id="LJu-jp-b8J"/>
+                        <constraint firstItem="ddY-PV-4uH" firstAttribute="leading" secondItem="lLW-eY-ABN" secondAttribute="leading" id="Scv-Q1-i4J"/>
+                        <constraint firstItem="bsS-fd-5db" firstAttribute="leading" secondItem="lLW-eY-ABN" secondAttribute="leading" id="TKX-f9-ne0"/>
+                        <constraint firstItem="bsS-fd-5db" firstAttribute="top" secondItem="lLW-eY-ABN" secondAttribute="top" id="Xu2-E5-9lt"/>
+                        <constraint firstAttribute="width" constant="300" id="bNa-wo-lBH"/>
+                        <constraint firstAttribute="height" constant="270" id="gIi-q5-xAa"/>
+                        <constraint firstAttribute="width" constant="300" id="h4n-HZ-uzk"/>
+                        <constraint firstAttribute="bottom" secondItem="ddY-PV-4uH" secondAttribute="bottom" id="sHt-C5-U1S"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KCN-8J-k8G"/>
+                            <exclude reference="bNa-wo-lBH"/>
+                            <exclude reference="h4n-HZ-uzk"/>
+                            <exclude reference="3U3-3U-cXR"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4010506466" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lLW-eY-ABN" firstAttribute="leading" secondItem="zv5-hj-7Hy" secondAttribute="leading" constant="10" id="O5L-7u-vQ5"/>
+                <constraint firstAttribute="trailing" secondItem="lLW-eY-ABN" secondAttribute="trailing" constant="10" id="QPO-rM-Saq"/>
+                <constraint firstAttribute="trailing" secondItem="lLW-eY-ABN" secondAttribute="trailing" constant="15" id="Tc2-L3-Y1y"/>
+                <constraint firstAttribute="bottom" secondItem="lLW-eY-ABN" secondAttribute="bottom" id="dYt-4F-i42"/>
+                <constraint firstItem="lLW-eY-ABN" firstAttribute="centerX" secondItem="zv5-hj-7Hy" secondAttribute="centerX" id="qJU-W2-VyF"/>
+                <constraint firstItem="lLW-eY-ABN" firstAttribute="leading" secondItem="zv5-hj-7Hy" secondAttribute="leading" constant="15" id="qhv-Mb-Bfn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="EmH-UK-aPe"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Tc2-L3-Y1y"/>
+                    <exclude reference="qhv-Mb-Bfn"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bottomConstraint" destination="dYt-4F-i42" id="RoB-re-Xi2"/>
+                <outlet property="buttomView" destination="lLW-eY-ABN" id="Mh1-wv-601"/>
+                <outlet property="doneBtn" destination="ddY-PV-4uH" id="fo7-Rl-AYk"/>
+                <outlet property="showYearView" destination="bsS-fd-5db" id="6LR-jH-Vr6"/>
+            </connections>
+            <point key="canvasLocation" x="-95" y="-77"/>
+        </view>
+    </objects>
+</document>

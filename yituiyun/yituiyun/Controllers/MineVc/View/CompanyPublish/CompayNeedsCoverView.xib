@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FTE-fM-Q4h" customClass="CompayNeedsCoverView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgH-Lf-joa">
+                    <rect key="frame" x="229" y="0.0" width="146" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_backgroud" translatesAutoresizingMaskIntoConstraints="NO" id="jHL-62-Xmb">
+                            <rect key="frame" x="0.0" y="0.0" width="135" height="95"/>
+                            <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="95" id="7bv-62-cpH"/>
+                                <constraint firstAttribute="width" constant="135" id="x8i-D6-ruh"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_publish" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-sU-Hf9">
+                            <rect key="frame" x="10" y="26" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="5wc-35-iDm"/>
+                                <constraint firstAttribute="height" constant="18" id="6qA-dD-GlG"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jianzhi_fabuzhaopin" translatesAutoresizingMaskIntoConstraints="NO" id="ia0-MI-dcP">
+                            <rect key="frame" x="10" y="66" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="jxw-XT-eaM"/>
+                                <constraint firstAttribute="height" constant="18" id="xGC-jr-sii"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06l-Nn-ovZ">
+                            <rect key="frame" x="0.0" y="8" width="146" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="146" id="ZWg-j5-WTn"/>
+                                <constraint firstAttribute="height" constant="50" id="cub-YU-TYA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="发布任务">
+                                <color key="titleColor" red="0.35590466100317208" green="0.35590466100317208" blue="0.35590466100317208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="publishBtnClick:" destination="FTE-fM-Q4h" eventType="touchUpInside" id="1KC-qr-srU"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAI-gT-QeA">
+                            <rect key="frame" x="0.0" y="53" width="146" height="1"/>
+                            <color key="backgroundColor" red="0.89974243053930059" green="0.89974243053930059" blue="0.89974243053930059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="yeW-ZZ-0OZ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tf-fg-i2a">
+                            <rect key="frame" x="5" y="58" width="130" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="9ui-De-tMn"/>
+                                <constraint firstAttribute="height" constant="31" id="DIj-3e-bII"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="11" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="发布招聘">
+                                <color key="titleColor" red="0.35682046413421631" green="0.3568871021270752" blue="0.35681626200675964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="publishJianZhiClick:" destination="FTE-fM-Q4h" eventType="touchUpInside" id="4ZO-zB-d10"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="06l-Nn-ovZ" firstAttribute="top" secondItem="NgH-Lf-joa" secondAttribute="top" constant="8" id="8Hb-4k-Ckh"/>
+                        <constraint firstItem="c7C-sU-Hf9" firstAttribute="top" secondItem="NgH-Lf-joa" secondAttribute="top" constant="26" id="8lS-dG-Fgp"/>
+                        <constraint firstItem="wAI-gT-QeA" firstAttribute="leading" secondItem="NgH-Lf-joa" secondAttribute="leading" id="Enf-4X-x6u"/>
+                        <constraint firstAttribute="width" constant="146" id="Gj5-D5-hxH"/>
+                        <constraint firstItem="3tf-fg-i2a" firstAttribute="leading" secondItem="NgH-Lf-joa" secondAttribute="leading" constant="5" id="J1l-el-EoB"/>
+                        <constraint firstAttribute="height" constant="150" id="JN1-Vn-vZ6"/>
+                        <constraint firstAttribute="trailing" secondItem="wAI-gT-QeA" secondAttribute="trailing" id="KJT-T8-7pj"/>
+                        <constraint firstItem="wAI-gT-QeA" firstAttribute="top" secondItem="06l-Nn-ovZ" secondAttribute="bottom" constant="-5" id="L5o-qk-avc"/>
+                        <constraint firstAttribute="trailing" secondItem="06l-Nn-ovZ" secondAttribute="trailing" id="Nvm-0c-Yce"/>
+                        <constraint firstItem="ia0-MI-dcP" firstAttribute="top" secondItem="wAI-gT-QeA" secondAttribute="bottom" constant="12" id="PyB-wC-w6G"/>
+                        <constraint firstItem="ia0-MI-dcP" firstAttribute="leading" secondItem="NgH-Lf-joa" secondAttribute="leading" constant="10" id="TfC-OK-8pF"/>
+                        <constraint firstItem="jHL-62-Xmb" firstAttribute="top" secondItem="NgH-Lf-joa" secondAttribute="top" id="f6J-Ke-NWt"/>
+                        <constraint firstItem="c7C-sU-Hf9" firstAttribute="leading" secondItem="NgH-Lf-joa" secondAttribute="leading" constant="10" id="kJI-Qh-L6f"/>
+                        <constraint firstAttribute="trailing" secondItem="jHL-62-Xmb" secondAttribute="trailing" constant="11" id="lS2-82-Wxl"/>
+                        <constraint firstItem="3tf-fg-i2a" firstAttribute="top" secondItem="wAI-gT-QeA" secondAttribute="bottom" constant="4" id="tnj-8H-4gS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.75445769069158486" green="0.75445769069158486" blue="0.75445769069158486" alpha="0.400390625" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NgH-Lf-joa" secondAttribute="trailing" id="YwS-ug-wBF"/>
+                <constraint firstItem="NgH-Lf-joa" firstAttribute="top" secondItem="FTE-fM-Q4h" secondAttribute="top" id="eWA-Nx-j1c"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-1253.5" y="-13.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="company_backgroud" width="135" height="54"/>
+        <image name="company_publish" width="18" height="17"/>
+        <image name="jianzhi_fabuzhaopin" width="18" height="18"/>
+    </resources>
+</document>

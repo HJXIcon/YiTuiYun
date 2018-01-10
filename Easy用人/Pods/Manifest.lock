@@ -1,0 +1,86 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BAButton (2.6.5)
+  - IQKeyboardManager (5.0.7)
+  - JPFPSStatus (0.1.1)
+  - JTSImageViewController (1.5.1)
+  - JXPageView (1.1.2)
+  - JXQRScan (1.0.7)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.1)
+  - PPNetworkHelper (0.8.0):
+    - AFNetworking (~> 3.1.0)
+    - YYCache (~> 1.0.4)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - SVProgressHUD (2.2.2)
+  - UITableView+FDTemplateLayoutCell (1.6)
+  - WechatOpenSDK (1.8.1)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - BAButton (~> 2.6.5)
+  - IQKeyboardManager (~> 5.0.6)
+  - JPFPSStatus (~> 0.1)
+  - JTSImageViewController (~> 1.5.1)
+  - JXPageView (~> 1.1.2)
+  - JXQRScan (~> 1.0.5)
+  - Masonry (~> 1.0.2)
+  - MBProgressHUD (~> 1.0.0)
+  - MJExtension (~> 3.0.13)
+  - MJRefresh (~> 3.1.12)
+  - PPNetworkHelper (~> 0.8.0)
+  - SDCycleScrollView (~> 1.74)
+  - SDWebImage (~> 4.1.0)
+  - SVProgressHUD (~> 2.2.2)
+  - UITableView+FDTemplateLayoutCell (~> 1.6)
+  - WechatOpenSDK
+  - YYImage (~> 1.0.4)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BAButton: 4a59120abd74ca52aa5d85552d0cc0cf997ed0a2
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  JPFPSStatus: 03f32aa3d4d7d0c5bf56f6f3e7cf8b7280a5f52c
+  JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
+  JXPageView: 366776b940f0fbb09fd3a620c88442efc0885eda
+  JXQRScan: f8f43782e88d313bad53ce3308fa5723917d88c4
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  PPNetworkHelper: 900d1af5cb9f2932b3f955ebf72148b7ec403d44
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WechatOpenSDK: 491d965d79335070328571d3e79f714549e79a5e
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: 067d49bf0682087909d92f70d53b8737f6efb9c7
+
+COCOAPODS: 1.2.1

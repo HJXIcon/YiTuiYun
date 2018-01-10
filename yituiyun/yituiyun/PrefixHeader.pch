@@ -1,0 +1,113 @@
+//
+//  PrefixHeader.pch
+//  社区快线
+//
+//  Created by NIT on 15/10/20.
+//  Copyright © 2015年 beifanghudong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif /* PrefixHeader_pch */
+
+
+
+#ifdef __OBJC__
+
+#import "PUBLICDEFINE.h"
+#import "ZQ_CommonTool.h"
+#import "ZQ_UIAlertView.h"
+#import "ZQ_AppCache.h"
+#import "ZQ_ViewController.h"
+#import "NStringFormatJudgment.h"
+#import "UIViewController+HUD.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+KN.h"
+#import "MBProgressHUD+MJ.h"
+#import "JPUSHService.h"
+#import "UIImageView+EMWebCache.h"
+#import "MJRefresh.h"
+#import "WCAlertView.h"
+#import "Reachability.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIView+Extension.h"
+#import "KNDefine.h"
+#import "KNTitleBtn.h"
+#import "NSString+Hash.h"
+#import "ZQ_CallMethod.h"
+#import "NSString+QJAddition.h"
+#import "UIColor+KNColor.h"
+#import "UIButton+EMWebCache.h"
+#import "UIImage+EMGIF.h"
+#import "UIButton+EMWebCache.h"
+#import "NSString+HFExtension.h"
+#import "HFRequest.h"
+#import "NSDate+Category.h"
+#import "NSDate+extend.h"
+#import "UIView+XSmartExtension.h"
+#import "HFDataBase.h"
+#import "ZQImageAndLabelButton.h"
+#import "UserInfoModel.h"
+#import "UITableView+HFExtension.h"
+#import "UIColor+HFExtension.h"
+//环信
+#import "EaseConversationListViewController.h"
+#import "EaseMessageViewController.h"
+#import "EaseUsersListViewController.h"
+#import "EaseViewController.h"
+
+#import "IModelCell.h"
+#import "IModelChatCell.h"
+#import "EaseMessageCell.h"
+#import "EaseBaseMessageCell.h"
+#import "EaseBubbleView.h"
+#import "EaseUserCell.h"
+
+//红包
+#import "RedPacketUserConfig.h"
+#import "RedPacketChatViewController.h"
+//友盟
+#import "UMMobClick/MobClick.h"
+#import "EaseChineseToPinyin.h"
+#import "EaseEmoji.h"
+#import "EaseEmotionEscape.h"
+#import "EaseEmotionManager.h"
+#import "EaseSDKHelper.h"
+#import "EMCDDeviceManager.h"
+#import "EaseConvertToCommonEmoticonsHelper.h"
+
+#import "NSDate+Category.h"
+#import "NSString+Valid.h"
+#import "UIImageView+EMWebCache.h"
+#import "UIViewController+HUD.h"
+#import "UIViewController+DismissKeyboard.h"
+#import "EaseLocalDefine.h"
+#import <Foundation/Foundation.h>
+#import "UIView+MJExtension.h"
+
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+#import "LHKAPI.h"
+#import "XKNetworkManager.h"
+#import "MJExtension.h"
+
+
+
+#endif

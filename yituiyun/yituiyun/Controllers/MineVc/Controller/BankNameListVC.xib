@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankNameListVC">
+            <connections>
+                <outlet property="tableView" destination="27N-xb-v6s" id="m1R-px-6FB"/>
+                <outlet property="textField" destination="z6h-Al-apm" id="zA1-4e-6RY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yI-pU-bkl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-tW-37o">
+                            <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="te5-oe-dga">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="8Ed-WJ-0kM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title=" 取消"/>
+                                    <connections>
+                                        <action selector="backup:" destination="-1" eventType="touchUpInside" id="NyW-Vh-SVm"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入银行名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6h-Al-apm">
+                                    <rect key="frame" x="60" y="5" width="265" height="34"/>
+                                    <color key="tintColor" red="0.55851248320000002" green="0.55851248320000002" blue="0.55851248320000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="textFiedChange:" destination="-1" eventType="editingChanged" id="o5k-zs-xi1"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="te5-oe-dga" firstAttribute="centerY" secondItem="0Th-tW-37o" secondAttribute="centerY" id="0Bq-vI-H4D"/>
+                                <constraint firstItem="z6h-Al-apm" firstAttribute="top" secondItem="0Th-tW-37o" secondAttribute="top" constant="5" id="411-xl-nuE"/>
+                                <constraint firstItem="te5-oe-dga" firstAttribute="top" secondItem="0Th-tW-37o" secondAttribute="top" id="L5d-S9-K9R"/>
+                                <constraint firstAttribute="bottom" secondItem="te5-oe-dga" secondAttribute="bottom" id="PfZ-QR-Y2p"/>
+                                <constraint firstItem="te5-oe-dga" firstAttribute="leading" secondItem="0Th-tW-37o" secondAttribute="leading" id="Y1C-aC-SHT"/>
+                                <constraint firstAttribute="trailing" secondItem="z6h-Al-apm" secondAttribute="trailing" constant="50" id="aNn-I8-LS6"/>
+                                <constraint firstItem="z6h-Al-apm" firstAttribute="leading" secondItem="te5-oe-dga" secondAttribute="trailing" id="hRY-xt-9OU"/>
+                                <constraint firstAttribute="height" constant="44" id="j04-la-EjC"/>
+                                <constraint firstAttribute="bottom" secondItem="z6h-Al-apm" secondAttribute="bottom" constant="5" id="vpd-xm-zfu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94657272100448608" green="0.38040488958358765" blue="0.33655798435211182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0Th-tW-37o" firstAttribute="leading" secondItem="7yI-pU-bkl" secondAttribute="leading" id="5Yq-GO-KNU"/>
+                        <constraint firstAttribute="trailing" secondItem="0Th-tW-37o" secondAttribute="trailing" id="Aq7-2m-rEq"/>
+                        <constraint firstAttribute="height" constant="64" id="Xwq-Hm-Qtj"/>
+                        <constraint firstAttribute="bottom" secondItem="0Th-tW-37o" secondAttribute="bottom" id="ih7-Lm-Ppl"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="27N-xb-v6s">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BLv-xj-LXx"/>
+                        <outlet property="delegate" destination="-1" id="AHc-Qd-goP"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7yI-pU-bkl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CVU-b1-fIF"/>
+                <constraint firstAttribute="bottom" secondItem="27N-xb-v6s" secondAttribute="bottom" id="MkV-Bs-RwW"/>
+                <constraint firstItem="27N-xb-v6s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WjD-Tt-L2L"/>
+                <constraint firstItem="7yI-pU-bkl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bma-Ss-xCe"/>
+                <constraint firstItem="27N-xb-v6s" firstAttribute="top" secondItem="7yI-pU-bkl" secondAttribute="bottom" id="gO0-mn-fvs"/>
+                <constraint firstAttribute="trailing" secondItem="7yI-pU-bkl" secondAttribute="trailing" id="zDB-bg-o7c"/>
+                <constraint firstAttribute="trailing" secondItem="27N-xb-v6s" secondAttribute="trailing" id="zay-2x-bxE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-253" y="68"/>
+        </view>
+    </objects>
+</document>

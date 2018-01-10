@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IaE-93-LNS" customClass="HomeHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKA-oQ-vFV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                    <color key="backgroundColor" red="0.94657272100448608" green="0.38040488958358765" blue="0.33655798435211182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6D-le-ece" customClass="LHKLeftButoon">
+                    <rect key="frame" x="10" y="13.5" width="80" height="38.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="未知城市" image="home_address_arrorw"/>
+                    <state key="highlighted" image="home_address_arrorw">
+                        <color key="titleColor" red="0.95474417099999997" green="0.52954171977457587" blue="0.53132241596150975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cityBtnClick:" destination="IaE-93-LNS" eventType="touchUpInside" id="BEf-Ka-J98"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7v-F0-uiI">
+                    <rect key="frame" x="95" y="13.5" width="225" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="f6a-Dg-TgD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="搜索" image="home_sousuo">
+                        <color key="titleColor" red="0.81789340101522845" green="0.81789340101522845" blue="0.81789340101522845" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="headViewSearchBtnClick:" destination="IaE-93-LNS" eventType="touchUpInside" id="sNV-qN-1UK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92931067943572998" green="0.92946994304656982" blue="0.92930072546005249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="M6D-le-ece" firstAttribute="width" secondItem="UKA-oQ-vFV" secondAttribute="width" multiplier="0.213" id="3qj-lg-oPu"/>
+                <constraint firstItem="M6D-le-ece" firstAttribute="height" secondItem="UKA-oQ-vFV" secondAttribute="height" multiplier="0.17" id="4GA-7F-z7N"/>
+                <constraint firstItem="M6D-le-ece" firstAttribute="leading" secondItem="IaE-93-LNS" secondAttribute="trailing" multiplier="0.027" id="BeO-1K-Vka"/>
+                <constraint firstItem="x7v-F0-uiI" firstAttribute="top" secondItem="M6D-le-ece" secondAttribute="top" id="Mdb-2Z-w5e"/>
+                <constraint firstAttribute="trailing" secondItem="UKA-oQ-vFV" secondAttribute="trailing" id="OTh-tS-Uro"/>
+                <constraint firstItem="UKA-oQ-vFV" firstAttribute="top" secondItem="IaE-93-LNS" secondAttribute="top" id="RgF-Oe-YUL"/>
+                <constraint firstItem="M6D-le-ece" firstAttribute="top" secondItem="IaE-93-LNS" secondAttribute="bottom" multiplier="0.06" id="Vez-8K-z1r"/>
+                <constraint firstItem="UKA-oQ-vFV" firstAttribute="leading" secondItem="IaE-93-LNS" secondAttribute="leading" id="VjA-Va-jAd"/>
+                <constraint firstAttribute="bottom" secondItem="UKA-oQ-vFV" secondAttribute="bottom" id="qMc-y0-gO4"/>
+                <constraint firstItem="x7v-F0-uiI" firstAttribute="leading" secondItem="M6D-le-ece" secondAttribute="trailing" constant="5" id="rLA-2C-buB"/>
+                <constraint firstItem="x7v-F0-uiI" firstAttribute="width" secondItem="UKA-oQ-vFV" secondAttribute="width" multiplier="0.6" id="vIT-ZC-TyG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="citySlectBtn" destination="M6D-le-ece" id="MHw-YU-Sl9"/>
+                <outlet property="picturepanView" destination="UKA-oQ-vFV" id="7bp-Y4-4fa"/>
+                <outlet property="searchBtn" destination="x7v-F0-uiI" id="4vv-AC-1g7"/>
+            </connections>
+            <point key="canvasLocation" x="-577" y="-1368"/>
+        </view>
+        <view contentMode="scaleToFill" id="rLU-fl-yAQ" customClass="HomeHeadCollectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="79X-sx-6tU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VZD-ue-61W">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="rLU-fl-yAQ" id="t8z-3N-X5i"/>
+                        <outlet property="delegate" destination="rLU-fl-yAQ" id="n5g-xe-k3G"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3R1-gU-Hfl">
+                    <rect key="frame" x="0.0" y="139.5" width="375" height="9"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6Lg-1r-9At">
+                            <rect key="frame" x="168" y="-13.5" width="39" height="37"/>
+                            <color key="pageIndicatorTintColor" red="0.95474417099999997" green="0.19924615540000001" blue="0.27361030289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6Lg-1r-9At" firstAttribute="centerY" secondItem="3R1-gU-Hfl" secondAttribute="centerY" id="9cb-Ba-ylu"/>
+                        <constraint firstItem="6Lg-1r-9At" firstAttribute="centerX" secondItem="3R1-gU-Hfl" secondAttribute="centerX" id="o0U-DH-fLi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.9101174535528983" green="0.9101174535528983" blue="0.9101174535528983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3R1-gU-Hfl" firstAttribute="leading" secondItem="rLU-fl-yAQ" secondAttribute="leading" id="2LS-EE-YF5"/>
+                <constraint firstItem="79X-sx-6tU" firstAttribute="leading" secondItem="rLU-fl-yAQ" secondAttribute="leading" id="3I2-4G-NxD"/>
+                <constraint firstItem="79X-sx-6tU" firstAttribute="top" secondItem="rLU-fl-yAQ" secondAttribute="top" id="Gci-lK-8gj"/>
+                <constraint firstAttribute="trailing" secondItem="79X-sx-6tU" secondAttribute="trailing" id="Otg-v3-kKV"/>
+                <constraint firstItem="3R1-gU-Hfl" firstAttribute="height" secondItem="rLU-fl-yAQ" secondAttribute="height" multiplier="0.0556" id="PTC-sf-jT2"/>
+                <constraint firstItem="3R1-gU-Hfl" firstAttribute="top" secondItem="79X-sx-6tU" secondAttribute="bottom" id="hfM-ue-3QA"/>
+                <constraint firstItem="79X-sx-6tU" firstAttribute="height" secondItem="rLU-fl-yAQ" secondAttribute="height" multiplier="0.89" id="kbs-dC-Coj"/>
+                <constraint firstAttribute="trailing" secondItem="3R1-gU-Hfl" secondAttribute="trailing" id="ssF-Pj-wIE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="79X-sx-6tU" id="Krw-xY-Flk"/>
+                <outlet property="pageController" destination="6Lg-1r-9At" id="nc4-nD-PxL"/>
+            </connections>
+            <point key="canvasLocation" x="-248.5" y="-1068.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_address_arrorw" width="14" height="7"/>
+        <image name="home_sousuo" width="19" height="20"/>
+    </resources>
+</document>

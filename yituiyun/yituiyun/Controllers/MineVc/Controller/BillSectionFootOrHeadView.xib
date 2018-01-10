@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5Re-NX-PFv" customClass="BillSectionFootOrHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuV-eC-D3k">
+                    <rect key="frame" x="15" y="5" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urc-yl-G9a">
+                    <rect key="frame" x="15" y="21.5" width="40" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1DL-td-nms">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-tb-YIl">
+                            <rect key="frame" x="15" y="20.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="bEC-1T-GUM"/>
+                                <constraint firstAttribute="width" constant="20" id="mEg-FJ-eeK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upS-EG-dvd">
+                            <rect key="frame" x="40" y="22.5" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92931067943572998" green="0.92946994304656982" blue="0.92930072546005249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="upS-EG-dvd" firstAttribute="leading" secondItem="bcg-tb-YIl" secondAttribute="trailing" constant="5" id="E2R-9N-LTK"/>
+                        <constraint firstItem="upS-EG-dvd" firstAttribute="centerY" secondItem="bcg-tb-YIl" secondAttribute="centerY" id="Ero-r9-f68"/>
+                        <constraint firstItem="bcg-tb-YIl" firstAttribute="leading" secondItem="1DL-td-nms" secondAttribute="leading" constant="15" id="bu4-F2-CV7"/>
+                        <constraint firstItem="bcg-tb-YIl" firstAttribute="centerY" secondItem="1DL-td-nms" secondAttribute="centerY" id="zHp-gi-bld"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92931067943572998" green="0.92946994304656982" blue="0.92930072546005249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1DL-td-nms" firstAttribute="leading" secondItem="5Re-NX-PFv" secondAttribute="leading" id="DHs-kB-BMF"/>
+                <constraint firstItem="1DL-td-nms" firstAttribute="top" secondItem="5Re-NX-PFv" secondAttribute="top" id="PTn-cz-8hr"/>
+                <constraint firstAttribute="trailing" secondItem="1DL-td-nms" secondAttribute="trailing" id="VKY-1G-9M7"/>
+                <constraint firstItem="EuV-eC-D3k" firstAttribute="leading" secondItem="5Re-NX-PFv" secondAttribute="leading" constant="15" id="dy8-cH-opk"/>
+                <constraint firstItem="Urc-yl-G9a" firstAttribute="leading" secondItem="5Re-NX-PFv" secondAttribute="leading" constant="15" id="erG-c9-UFE"/>
+                <constraint firstItem="EuV-eC-D3k" firstAttribute="top" secondItem="5Re-NX-PFv" secondAttribute="top" constant="5" id="gco-9I-doZ"/>
+                <constraint firstAttribute="bottom" secondItem="1DL-td-nms" secondAttribute="bottom" id="oR1-ox-PJp"/>
+                <constraint firstItem="Urc-yl-G9a" firstAttribute="centerY" secondItem="5Re-NX-PFv" secondAttribute="centerY" id="y8h-Cg-s3e"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="middleLabel" destination="Urc-yl-G9a" id="58w-fx-GBy"/>
+                <outlet property="panDesView" destination="upS-EG-dvd" id="UvS-90-Igz"/>
+                <outlet property="panView" destination="1DL-td-nms" id="wMl-k1-Qfs"/>
+                <outlet property="panoneLabel" destination="bcg-tb-YIl" id="fGM-xl-236"/>
+                <outlet property="upLabel" destination="EuV-eC-D3k" id="DxZ-OY-ZQ5"/>
+            </connections>
+            <point key="canvasLocation" x="1.5" y="180"/>
+        </view>
+    </objects>
+</document>

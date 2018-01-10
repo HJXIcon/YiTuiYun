@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5mh-6s-hYQ" customClass="TaskHallEnterpriseDetailFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prv-PT-qS4">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="qre-Zs-bjE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="收藏" image="collectionNo.png">
+                        <color key="titleColor" red="0.22854614549999999" green="0.23080897859999999" blue="0.23080897859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shoucangClick:" destination="5mh-6s-hYQ" eventType="touchUpInside" id="Pnt-2T-AGY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YR-h9-Poj">
+                    <rect key="frame" x="82" y="0.0" width="293" height="44"/>
+                    <color key="backgroundColor" red="0.95455998180000001" green="0.37650310990000002" blue="0.31897217039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="报名">
+                        <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="baomingClick:" destination="5mh-6s-hYQ" eventType="touchUpInside" id="w4l-DU-OCg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3YR-h9-Poj" firstAttribute="top" secondItem="5mh-6s-hYQ" secondAttribute="top" id="233-Wn-eaa"/>
+                <constraint firstAttribute="bottom" secondItem="3YR-h9-Poj" secondAttribute="bottom" id="I2s-NG-8aL"/>
+                <constraint firstItem="prv-PT-qS4" firstAttribute="top" secondItem="5mh-6s-hYQ" secondAttribute="top" id="Wbv-i6-xhS"/>
+                <constraint firstAttribute="bottom" secondItem="prv-PT-qS4" secondAttribute="bottom" id="aTr-oz-k7M"/>
+                <constraint firstAttribute="trailing" secondItem="3YR-h9-Poj" secondAttribute="trailing" id="lOp-5n-GNI"/>
+                <constraint firstItem="3YR-h9-Poj" firstAttribute="leading" secondItem="prv-PT-qS4" secondAttribute="trailing" constant="2" id="sM0-SD-hPf"/>
+                <constraint firstItem="prv-PT-qS4" firstAttribute="leading" secondItem="5mh-6s-hYQ" secondAttribute="leading" id="ukh-ed-WUq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="baomingBtn" destination="3YR-h9-Poj" id="XI5-i1-oTU"/>
+                <outlet property="shoucangBtn" destination="prv-PT-qS4" id="G2s-zA-2SQ"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="collectionNo.png" width="19" height="19"/>
+    </resources>
+</document>
